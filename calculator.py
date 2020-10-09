@@ -25,23 +25,23 @@ print("4.Divide")
 
 while True:
     # Take input from the user
-    choice = input("Enter choice(1/2/3/4): ")
+    Select = input("Enter choice(1/2/3/4): ")
 
     # Check if choice is one of the four options
-    if choice in ('1', '2', '3', '4'):
+    if Select in ('1', '2', '3', '4'):
         num1 = float(input("Enter first number: "))
         num2 = float(input("Enter second number: "))
 
-        if choice == '1':
+        if Select == '1':
             print(num1, "+", num2, "=", add(num1, num2))
 
-        elif choice == '2':
+        elif Select == '2':
             print(num1, "-", num2, "=", subtract(num1, num2))
 
-        elif choice == '3':
+        elif Select == '3':
             print(num1, "*", num2, "=", multiply(num1, num2))
 
-        elif choice == '4':
+        elif Select == '4':
             print(num1, "/", num2, "=", divide(num1, num2))
         break
     else:
